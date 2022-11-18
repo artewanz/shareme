@@ -1,0 +1,45 @@
+@layer base {
+  :root {
+    font-family: Montserrat, Avenir, Helvetica, Arial, sans-serif;
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+
+    --w-sidebar: 280px;
+    --offset-sidebar: calc(var(--w-sidebar) + 16px);
+  }
+
+  figure img {
+    @apply w-full h-full object-contain;
+  }
+
+  input,
+  textarea,
+  select,
+  button {
+    @apply focus:outline-none;
+  }
+
+  select,
+  option {
+    cursor: pointer;
+  }
+
+  a[target="_blank"] {
+    @apply hover:underline underline-offset-4;
+  }
+
+  @media (min-width: 1000px) {
+    :root {
+      --w-sidebar: 350px;
+    }
+  }
+  @media (min-width: 2000px) {
+    :root {
+      --w-sidebar: 500px;
+    }
+  }
+}
