@@ -1,4 +1,4 @@
-import { Pin } from "@app/components"
+import { Pin } from "@src/components"
 import React from "react"
 import Masonry from "react-masonry-css"
 

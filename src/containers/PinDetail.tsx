@@ -3,12 +3,12 @@ import { MdDownloadForOffline, MdOutlineArrowBack } from "react-icons/md"
 import { Link, useNavigate, useParams } from "react-router-dom"
 import { v4 as idGenerator } from "uuid"
 
-import { client, urlFor } from "@app/client"
-import { pinDetailQuery, pinDetailMorePinQuery } from "@app/utils/querys"
-import { MasonryLayout, Spinner } from "@app/components"
-import { IPin, IUser } from "@app/utils/types"
-import { convertLinkToText } from "@app/utils/functions/helpers"
-import UserContext from "@app/utils/context/userContext"
+import { client, urlFor } from "@src/client"
+import { pinDetailQuery, pinDetailMorePinQuery } from "@src/utils/querys"
+import { MasonryLayout, Spinner } from "@src/components"
+import { IPin, IUser } from "@src/utils/types"
+import { convertLinkToText } from "@src/utils/functions/helpers"
+import UserContext from "@src/utils/context/userContext"
 import { BsFillArrowRightCircleFill } from "react-icons/bs"
 
 function PinDetail(props) {

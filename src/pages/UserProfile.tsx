@@ -1,5 +1,5 @@
 import { useContext, useEffect, useState } from "react"
-import UserContext from "@app/utils/context/userContext"
+import UserContext from "@src/utils/context/userContext"
 import { useNavigate, useParams } from "react-router-dom"
 import { GoogleLogout } from "react-google-login"
 import DefaultLayout from "./layouts/DefaultLayout"
@@ -9,11 +9,11 @@ import {
   userQuery,
   userSavedPinsQuery,
   userCreatedPinsQuery,
-} from "@app/utils/querys"
+} from "@src/utils/querys"
 
-import { client } from "@app/client"
-import { MasonryLayout, Spinner } from "@app/components"
-import { IPin, IUser } from "@app/utils/types"
+import { client } from "@src/client"
+import { MasonryLayout, Spinner } from "@src/components"
+import { IPin, IUser } from "@src/utils/types"
 
 const randomImage =
   "https://source.unsplash.com/1600x900/?nature,photography,technology"

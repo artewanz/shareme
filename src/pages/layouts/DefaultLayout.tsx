@@ -4,7 +4,7 @@ import { motion } from "framer-motion"
 import { useLocation } from "react-router-dom"
 import { HiOutlineChevronRight } from "react-icons/hi"
 
-import { Header, Sidebar } from "@app/components/index"
+import { Header, Sidebar } from "@src/components/index"
 
 export default function DefaultLayout({ children }) {
   const isMinMediumScreen = window.matchMedia("(min-width: 768px)").matches

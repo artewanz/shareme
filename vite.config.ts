@@ -10,7 +10,7 @@ export default defineConfig({
   resolve: {
     alias: {
       "@app": resolve("app"),
-      "@css": resolve("app/css"),
+      "@css": resolve("src/css"),
     },
   },
   build: {

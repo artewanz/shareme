@@ -1,4 +1,4 @@
-import DefaultLayout from "@app/pages/layouts/DefaultLayout"
+import DefaultLayout from "@src/pages/layouts/DefaultLayout"
 import React from "react"
 
 function NotFound() {

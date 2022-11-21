@@ -1,14 +1,14 @@
 import GoogleLogin, { GoogleLoginResponse } from "react-google-login"
 import { useNavigate } from "react-router-dom"
 import { FcGoogle } from "react-icons/fc"
-import { bgVideo } from "@app/assets"
-import { logoWhite } from "@app/assets"
+import { bgVideo } from "@src/assets"
+import { logoWhite } from "@src/assets"
 import { useEffect, useState } from "react"
 import { gapi } from "gapi-script"
-import { client } from "@app/client"
+import { client } from "@src/client"
 import { useContext } from "react"
-import UserContext from "@app/utils/context/userContext"
-import { userQuery } from "@app/utils/querys"
+import UserContext from "@src/utils/context/userContext"
+import { userQuery } from "@src/utils/querys"
 
 export default function Login() {
   const navigate = useNavigate()

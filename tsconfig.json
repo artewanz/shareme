@@ -16,10 +16,10 @@
     "noEmit": true,
     "jsx": "react-jsx",
     "paths": {
-      "@app/*": ["./app/*"],
+      "@src/*": ["./src/*"],
       "@css/*": ["./src/css/*"]
     }
   },
-  "include": ["app", "vite-env.d.ts"],
+  "include": ["src", "vite-env.d.ts"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

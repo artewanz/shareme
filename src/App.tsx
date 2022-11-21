@@ -2,7 +2,7 @@ import { useEffect, useState } from "react"
 import { Routes, Route, useLocation, useNavigate } from "react-router-dom"
 
 import UserContext from "./utils/context/userContext"
-import { Login, MainPage, UserProfile } from "@app/pages"
+import { Login, MainPage, UserProfile } from "@src/pages"
 
 function App() {
   const [user, setUser] = useState(

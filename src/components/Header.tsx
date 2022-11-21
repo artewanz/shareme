@@ -1,4 +1,4 @@
-import { logo } from "@app/assets"
+import { logo } from "@src/assets"
 import { HiMenu } from "react-icons/hi"
 import { Link } from "react-router-dom"
 

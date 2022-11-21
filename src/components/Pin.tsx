@@ -1,5 +1,5 @@
-import { urlFor, client } from "@app/client"
-import { IPin, IUser } from "@app/utils/types"
+import { urlFor, client } from "@src/client"
+import { IPin, IUser } from "@src/utils/types"
 import React, { FC } from "react"
 import { Link, useNavigate } from "react-router-dom"
 import { MdDownloadForOffline } from "react-icons/md"
@@ -9,10 +9,10 @@ import { BsFillArrowRightCircleFill } from "react-icons/bs"
 import { motion, AnimatePresence } from "framer-motion"
 
 import { v4 as idGenerator } from "uuid"
-import UserContext from "@app/utils/context/userContext"
-import { pinQueryById } from "@app/utils/querys"
+import UserContext from "@src/utils/context/userContext"
+import { pinQueryById } from "@src/utils/querys"
 
-import { convertLinkToText } from "@app/utils/functions/helpers"
+import { convertLinkToText } from "@src/utils/functions/helpers"
 
 interface Props {
   data: IPin

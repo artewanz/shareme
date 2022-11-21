@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react"
 import DefaultLayout from "./layouts/DefaultLayout"
-import { Feed, CreatePin, PinDetail } from "@app/containers"
+import { Feed, CreatePin, PinDetail } from "@src/containers"
 import { Route, Routes } from "react-router-dom"
 
 export default function MainPage() {

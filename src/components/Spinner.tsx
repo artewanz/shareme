@@ -1,6 +1,6 @@
 import React from "react"
 import { Oval as Loader } from "react-loader-spinner"
-import { red } from "@app/utils/constants/colors"
+import { red } from "@src/utils/constants/colors"
 
 const Spinner = ({ message = "" }) => {
   return (

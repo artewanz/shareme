@@ -1,13 +1,13 @@
 import { useState, useContext } from "react"
 import { useNavigate } from "react-router-dom"
-import UserContext from "@app/utils/context/userContext"
+import UserContext from "@src/utils/context/userContext"
 
 import { AiOutlineCloudUpload } from "react-icons/ai"
 import { MdDelete } from "react-icons/md"
-import categories from "@app/utils/constants/categories"
-import { Spinner } from "@app/components/index"
-import { client } from "@app/client"
-import { IUser } from "@app/utils/types"
+import categories from "@src/utils/constants/categories"
+import { Spinner } from "@src/components/index"
+import { client } from "@src/client"
+import { IUser } from "@src/utils/types"
 
 const inputStyles =
   "w-full border-gray-200 p-2 focus:valid:border-gray-400 invalid:text-red-500 invalid:border-red-500"

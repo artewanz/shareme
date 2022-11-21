@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react"
 import { useParams } from "react-router-dom"
 
-import { client } from "@app/client"
+import { client } from "@src/client"
 
-import { Search, Spinner, MasonryLayout } from "@app/components"
-import { feedQuery } from "@app/utils/querys"
+import { Search, Spinner, MasonryLayout } from "@src/components"
+import { feedQuery } from "@src/utils/querys"
 
 function Feed() {
   const [loading, setLoading] = useState(false)

@@ -5,13 +5,13 @@ import { useEffect } from "react"
 import { RiHomeFill } from "react-icons/ri"
 import { AiOutlineLogin } from "react-icons/ai"
 import { Link, NavLink } from "react-router-dom"
-import { logo } from "@app/assets"
+import { logo } from "@src/assets"
 import { useContext } from "react"
-import UserContext from "@app/utils/context/userContext"
+import UserContext from "@src/utils/context/userContext"
 
-import { IUser } from "@app/utils/types"
+import { IUser } from "@src/utils/types"
 
-import Categories from "@app/utils/constants/categories"
+import Categories from "@src/utils/constants/categories"
 
 const activeLink =
   "text-black font-bold border-r-4 border-black flex items-center bg-gray-50"
