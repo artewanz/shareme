@@ -1,0 +1,31 @@
+@layer components {
+  .Loader {
+    border-radius: 50%;
+    padding: 1px;
+    background: conic-gradient(#0000 10%, #ef4444) content-box;
+    mask: repeating-conic-gradient(
+        #0000 0deg,
+        #000 1deg 20deg,
+        #0000 21deg 36deg
+      ),
+      radial-gradient(
+        farthest-side,
+        #0000 calc(100% - 9px),
+        #000 calc(100% - 8px)
+      );
+    mask-composite: destination-in;
+    mask-composite: intersect;
+  }
+
+  .PinGrid {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+  }
+
+  .MasonryLayout {
+    display: grid;
+    gap: 0.5rem;
+    @apply grid-flow-dense grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5;
+  }
+}
