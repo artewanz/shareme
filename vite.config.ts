@@ -4,12 +4,12 @@ import { resolve } from "path"
 
 export default defineConfig({
   plugins: [react()],
-  root: resolve("app"),
+  root: resolve("src"),
   base: "",
   publicDir: resolve("public"),
   resolve: {
     alias: {
-      "@app": resolve("app"),
+      "@src": resolve("src"),
       "@css": resolve("src/css"),
     },
   },
