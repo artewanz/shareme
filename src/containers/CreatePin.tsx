@@ -1,4 +1,4 @@
-import { useState, useContext } from "react"
+import { useState, useContext, useEffect } from "react"
 import { useNavigate } from "react-router-dom"
 import UserContext from "@src/utils/context/userContext"
 
@@ -68,6 +68,12 @@ function CreatePin() {
       navigate("/")
     })
   }
+
+  useEffect(() => {
+    if (!user) {
+      navigate("/login")
+    }
+  }, [])
 
   return (
     <div className="flex flex-col place-center h-full">

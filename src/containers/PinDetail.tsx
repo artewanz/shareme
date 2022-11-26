@@ -73,7 +73,7 @@ function PinDetail(props) {
   return (
     <div className="relative">
       <article className="space-y-4">
-        <div className="flex flex-col lg:PinGrid bg-white items-start w-full min-w-[25vw] max-w-full space-y-8 rounded-2xl">
+        <div className="flex flex-col lg:PinGrid max-w-screen-2xl bg-white items-start min-w-[25vw] space-y-8 rounded-2xl">
           <figure className="relative self-center">
             <img
               src={pinDetail.image && urlFor(pinDetail.image).url()}

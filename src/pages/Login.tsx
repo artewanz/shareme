@@ -1,5 +1,5 @@
 import GoogleLogin, { GoogleLoginResponse } from "react-google-login"
-import { useNavigate } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 import { FcGoogle } from "react-icons/fc"
 import { bgVideo } from "@src/assets"
 import { logoWhite } from "@src/assets"
@@ -9,6 +9,7 @@ import { client } from "@src/client"
 import { useContext } from "react"
 import UserContext from "@src/utils/context/userContext"
 import { userQuery } from "@src/utils/querys"
+import { MdArrowBack } from "react-icons/md"
 
 export default function Login() {
   const navigate = useNavigate()
@@ -76,7 +77,7 @@ export default function Login() {
               <img src={logoWhite} alt="Shareme logo" />
             </figure>
 
-            <div className="shadow-2xl">
+            <div className="shadow-2xl space-y-4">
               <GoogleLogin
                 clientId={import.meta.env.VITE_GOOGLE_CLIENT_ID}
                 render={(renderProps) => (
@@ -94,6 +95,14 @@ export default function Login() {
                 onFailure={failureGoogleResponse}
                 cookiePolicy="single_host_origin"
               />
+
+              <Link
+                className="bg-mainColor text-black p-4 rounded-lg outline-2 focus:outline disabled:bg-neutral-500 flex items-center text-center gap-x-4"
+                to="/"
+              >
+                <MdArrowBack className="w-8 h-8" />
+                Cancel
+              </Link>
             </div>
           </div>
         </section>
